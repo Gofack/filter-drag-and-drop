@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Dedey html test</title>
+	<link rel="stylesheet" href="css/styles.css">
+	<script src="js/jquery-1.12.4.min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/scripts.js"></script>
+</head>
+
+<body>
+	<div class="wrapper">
+		<main id="main">
+			<div class="container">
+				<div class="filter-module">
+					<form action="#">
+						<div class="form-group with-icon">
+							<label for="location">Место или название отеля</label>
+							<input type="text" id="location" placeholder="Введите здесь место">
+							<span class="ico-holder">
+								<img src="images/ico-marker.png" alt="image description">
+							</span><!-- /.icon-holder -->
+						</div><!-- /.form-group -->
+						<div class="form-group with-icon with-dot">
+							<label for="move-in">Заезд</label>
+							<input type="text" id="move-in" class="datepicker" placeholder="Дата">
+							<span class="ico-holder">
+								<img src="images/ico-calendar.png" alt="image description">
+							</span><!-- /.icon-holder -->
+						</div><!-- /.form-group -->
+						<div class="form-group with-chevron">
+							<label for="move-out">Выезд</label>
+							<input type="text" id="move-out" class="datepicker" placeholder="Дата">
+						</div><!-- /.form-group -->
+						<div class="qty-group">
+							<div class="qty-item">
+								<label for="flats">Номера</label>
+								<div class="qty-wr">
+									<a href="#" class="qty-btn qty-btn-remove disabled"></a>
+									<input type="number" id="flats" value="1" min="1" max="9999">
+									<a href="#" class="qty-btn qty-btn-add"></a>
+								</div><!-- / qty-wr -->
+							</div><!-- /.qty-item -->
+							<div class="qty-item">
+								<label for="adults">Взрослые</label>
+								<div class="qty-wr">
+									<a href="#" class="qty-btn qty-btn-remove disabled"></a>
+									<input type="number" id="adults" value="1" min="1" max="9999">
+									<a href="#" class="qty-btn qty-btn-add"></a>
+								</div><!-- / qty-wr -->
+							</div><!-- /.qty-item -->
+							<div class="qty-item">
+								<label for="child">Дети</label>
+								<div class="qty-wr">
+									<a href="#" class="qty-btn qty-btn-remove disabled"></a>
+									<input type="number" id="child" value="1" min="1" max="9999">
+									<a href="#" class="qty-btn qty-btn-add"></a>
+								</div><!-- / qty-wr -->
+							</div><!-- /.qty-item -->
+						</div><!-- /.qty-group -->
+						<a href="#" class="add-link">+</a>
+						<button type="submit" class="btn">Найти</button>
+					</form>
+				</div><!-- /.filter-module -->
+			</div><!-- /.container -->
+		</main>
+	</div><!-- / wrapper -->
+</body>
+
+</html>
